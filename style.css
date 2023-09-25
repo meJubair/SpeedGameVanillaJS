@@ -8,6 +8,11 @@
     src: url('/fonts/FighterFish.otf');
 }
 
+@font-face {
+    font-family: 'BloodThirsty';
+    src: url('/fonts/BloodThirsty.ttf');
+}
+
 body {
     /* background: linear-gradient(to bottom, red, purple) no-repeat fixed center center/cover; */
     background: url(https://i.etsystatic.com/5355453/r/il/4292bd/4369403913/il_fullxfull.4369403913_fkuf.jpg) repeat fixed center center/cover;
@@ -20,10 +25,10 @@ header {
 
 header h1 {
     text-align: center;
-    color: beige;
-    font-size: 10rem;
+    color: rgb(180, 30, 30);
+    font-size: 8rem;
     font-weight: bolder;
-    font-family: 'FishOutlined', sans-serif;
+    font-family: 'BloodThirsty', sans-serif;
     margin: 5rem 0;
 }
 
