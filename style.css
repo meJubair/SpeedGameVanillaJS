@@ -9,7 +9,8 @@
 }
 
 body {
-    background: linear-gradient(to bottom, red, purple) no-repeat fixed center center/cover;
+    /* background: linear-gradient(to bottom, red, purple) no-repeat fixed center center/cover; */
+    background: url(https://i.etsystatic.com/5355453/r/il/4292bd/4369403913/il_fullxfull.4369403913_fkuf.jpg) repeat fixed center center/cover;
 }
 
 header {
@@ -34,11 +35,11 @@ header h1 {
 }
 
 .box {
-    background-color: rgba(255,0,0,0.6);
+    /* background-color: rgba(255,0,0,0.6); */
     border-radius: 50%;
     width: 300px;
     aspect-ratio: 1;
-    border: 16px double white;
+    /* border: 16px double white; */
     cursor: url(/images/cursor96.svg), auto;
 
     display: flex;
