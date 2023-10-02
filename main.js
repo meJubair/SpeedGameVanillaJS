@@ -28,7 +28,7 @@ const clickBox = (i) => {
 
   rounds--
 
-  score += 10;
+  score += 1;
 
   if (score <= 1){
     scoreCard.textContent = `Caught ${score} fish`;
