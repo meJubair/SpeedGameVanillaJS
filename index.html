@@ -4,20 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Speed Game</title>
+    <title>Speed Fishing</title>
 </head>
 <body>
     <header>
-        <h1>Catch if you can!!</h1>
+        <h1>Speed Fishing</h1>
+        <!-- <h2>Catch fishes as MANY and FAST as you can!!</h2> -->
+        <h2 id="score"><!-- Caught 0 fish -->Catch fishes as MANY and FAST as you can!!</h2>
     </header>
     <main>
         <div class="container">
-            <div class="box box1"><img src="/images/fish1.svg" alt="" class="fish"></div>
-            <div class="box box2"><img src="/images/fish1.svg" alt="" class="fish"></div>
-            <div class="box box3"><img src="/images/fish1.svg" alt="" class="fish"></div>
-            <div class="box box4"><img src="/images/fish1.svg" alt="" class="fish"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div id="startStop">
+            <button id="startBtn">Start</button>
+            <button id="stopBtn">Stop</button>
         </div>
     </main>
+    <div id="modalOverlay">
+        <div id="modal">
+            <button id="closeBtn">Close x</button>
+            <div id="modalContent">
+                <h2>Game Over!</h2>
+                <img src="/images/fish1.svg" alt="">
+                <h2 id="score1"></h2>
+                <h2 class="msg"></h2>
+
+            </div>
+
+        </div>
+    
+    </div>
+
+    <audio id="clickSound" src="/sound/clickSound-water-splash-46402.mp3"></audio>
+    <audio id="bgMusic" src="/sound/bgMusic-aquarium-sound-6891.mp3"></audio>
+    <audio id="gameOver" src="/sound/gameOver-winfantasia-6912.mp3"></audio>
 
     <footer>
 
