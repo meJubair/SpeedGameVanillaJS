@@ -32,8 +32,8 @@ const clickBox = (i) => {
 
   if (score <= 1){
     scoreCard.textContent = `Caught ${score} fish`;
-    scoreCard.style.color = "red";
-  } else if (score <= 10) {
+    scoreCard.style.color = "tomato";
+  } else if (score <= 20) {
     scoreCard.textContent = `Caught ${score} fishes`;
     scoreCard.style.color = "yellow";
   } else if (score <= 50) {
@@ -108,8 +108,8 @@ const stopGame = () => {
   /* VARIABLE MESSAGES BASED ON SCORE */
   if (score <= 1) {
     msg.textContent = `Oops! Better luck next time!!`;
-    msg.style.color = "red";
-  } else if (score < 10) {
+    msg.style.color = "tomato";
+  } else if (score < 20) {
     msg.textContent = `You have caught only ${score} fishes! \r\n Pay more attention!!`;
     msg.style.color = "yellow";
   } else if (score < 50){

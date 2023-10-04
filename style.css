@@ -15,13 +15,13 @@
 
 @font-face {
     font-family: 'Fishy';
-    src: url('/fonts/touch-of-nature.regular.ttf');
+    src: url("./fonts/touch-of-nature.regular.ttf");
 }
 
 body {
     /* background: linear-gradient(to bottom, red, purple) no-repeat fixed center center/cover; */
     /* background: url(https://i.etsystatic.com/5355453/r/il/4292bd/4369403913/il_fullxfull.4369403913_fkuf.jpg) repeat fixed center center/cover; */
-    background: url(/images/bg-main.jpg) repeat fixed center center/cover;
+    background: url("./images/bg-main.jpg") repeat fixed center center/cover;
     font-family: 'Fishy', sans-serif;
     /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
 }
@@ -30,6 +30,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    cursor: url("./images/spear_1.svg"), auto;
 }
 
 header {
@@ -71,7 +72,7 @@ header h2 {
     aspect-ratio: 1;
     /* border: 16px double white; */
     margin: 1rem;
-    cursor: url(/images/cursor96.svg), auto;
+    cursor: url("./images/spear_1.svg"), auto;
 
     display: flex;
     place-items: center;
@@ -82,7 +83,7 @@ header h2 {
 .active {
     background-color:transparent;
     /* background-image: url('/images/giphy.webp'); */
-    background-image: url('/images/cartoon-fish-transparent-background-21.png');
+    background-image: url("./images/fish-cartoon.png");
     background-size: 250px 250px;
     background-repeat: no-repeat;
     background-position: center;
@@ -152,7 +153,7 @@ button {
     text-transform: uppercase;
     font-size: 1rem;
     background-color: #333;
-    cursor: pointer;
+    
 }
 
 #modalContent {
@@ -183,4 +184,74 @@ button {
     width: 250px;
     aspect-ratio: 1;
     padding: 2rem 1rem;
+}
+
+
+
+/* MOBILE FRIENDLY APPROACH LANDSCAPE */
+@media screen and (orientation: landscape) and (max-width: 1024px) {
+    body {
+        height: 100vh;
+        box-sizing: border-box;
+    }
+
+    .container {
+        height: 40vh;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header h2 {
+        font-size: 1rem;
+    }
+
+    .active {
+        background-size: cover;
+    }
+
+    #modal {
+        margin: 0 5vw;
+        width: 90vw;
+    }
+
+    button {
+        font-size: 28px;
+    }
+}
+
+
+/* MOBILE FRIENDLY APPROACH PORTRAIT */
+@media screen and (orientation: portrait) and (max-width: 600px) {
+    body {
+        height: 100vh;
+        box-sizing: border-box;
+    }
+
+    .container {
+        height: 40vh;
+    }
+
+    header h1 {
+        font-size: 2rem;
+        margin-top: 5rem;
+    }
+
+    header h2 {
+        font-size: 1rem;
+    }
+
+    .active {
+        background-size: cover;
+    }
+
+    #modal {
+        margin: 0 5vw;
+        width: 90vw;
+    }
+
+    button {
+        font-size: 28px;
+    }
 }
