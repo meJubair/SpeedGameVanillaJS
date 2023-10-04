@@ -69,7 +69,7 @@ const startGame = () => {
     startBtn.style.display = "none";
     stopBtn.style.display = "block";
 
-    console.log("game started");
+    /* console.log("game started"); */
 
     if (rounds >= 3) {
         return stopGame()

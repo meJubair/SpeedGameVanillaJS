@@ -1,36 +1,22 @@
-/* @font-face {
-    font-family: 'FishOutlined';
-    src: url('/fonts/FishOutlined.otf');
-}
-
-@font-face {
-    font-family: 'FighterFish';
-    src: url('/fonts/FighterFish.otf');
-}
-
-@font-face {
-    font-family: 'BloodThirsty';
-    src: url('/fonts/BloodThirsty.ttf');
-} */
-
 @font-face {
     font-family: 'Fishy';
-    src: url("./fonts/touch-of-nature.regular.ttf");
-}
-
-body {
-    /* background: linear-gradient(to bottom, red, purple) no-repeat fixed center center/cover; */
-    /* background: url(https://i.etsystatic.com/5355453/r/il/4292bd/4369403913/il_fullxfull.4369403913_fkuf.jpg) repeat fixed center center/cover; */
-    background: url("./images/bg-main.jpg") repeat fixed center center/cover;
-    font-family: 'Fishy', sans-serif;
-    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    src:    url("./fonts/touch-of-nature.regular-webfont.woff2") format('woff2'),
+            url("./fonts/touch-of-nature.regular-webfont.woff") format('woff'),
+            url("./fonts/touch-of-nature.regular.ttf") format('truetype');
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    cursor: url("./images/spear_1.svg"), auto;
+    cursor: url("./images/cursor.svg"), auto;
+}
+
+body {
+    background: url("./images/bg-main.jpg") repeat fixed center center/cover;
+    font-family: 'Fishy', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -43,7 +29,6 @@ header h1 {
     color: tomato;
     font-size: 8rem;
     font-weight: bolder;
-    /* font-family: 'BloodThirsty', sans-serif; */
     font-family: 'Fishy', serif;
     margin: 1rem auto;
 }
@@ -52,6 +37,7 @@ header h2 {
     text-align: center;
     color: aliceblue;
     font-size: 2.5rem;
+    height: 5rem;
     font-weight: 100;
     font-variant: small-caps;
     color: skyblue;
@@ -66,36 +52,25 @@ header h2 {
 }
 
 .box {
-    /* background-color: rgba(255,0,0,0.6); */
     border-radius: 50%;
-    width: 300px;
+    width: 25vw;
     aspect-ratio: 1;
-    /* border: 16px double white; */
     margin: 1rem;
-    cursor: url("./images/spear_1.svg"), auto;
+    cursor: url("./images/cursor.svg"), auto;
 
     display: flex;
     place-items: center;
     pointer-events: none;
-    /* background-color: tomato; */
 }
 
 .active {
     background-color:transparent;
     /* background-image: url('/images/giphy.webp'); */
-    background-image: url("./images/fish-cartoon.png");
+    background-image: url("./images/fish-cartoon.webp");
     background-size: 250px 250px;
     background-repeat: no-repeat;
     background-position: center;
   }
-
-/* .box img {
-    width: 80%;
-    height: 80%;
-    object-fit: cover;
-    padding: 1rem;
-    background-color: transparent; 
-}*/
 
 button {
     background-color: #666;
@@ -138,7 +113,6 @@ button {
     margin: 10%;
     min-height: 50%;
     max-height: 90%;
-    background-color: aliceblue;
     color: #333;
     border-radius: 8px;
 
@@ -152,7 +126,6 @@ button {
     position: absolute;
     top: 1rem;
     right: 1rem;
-    background-color: aliceblue;
     color: #999;
     text-transform: uppercase;
     font-size: 1rem;
@@ -161,7 +134,6 @@ button {
 }
 
 #modalContent {
-    
     padding: 1rem 2rem;
     padding-bottom: 3rem;
     text-align: center;
@@ -239,10 +211,6 @@ footer a {
         box-sizing: border-box;
     }
 
-    .container {
-        height: 40vh;
-    }
-
     header h1 {
         font-size: 2rem;
     }
@@ -278,7 +246,7 @@ footer a {
     }
 
     #modalContent img {
-        width: 20vw;
+        width: 40vh;
         aspect-ratio: 1;
         padding: 0.5rem;
     }
@@ -301,10 +269,6 @@ footer a {
         box-sizing: border-box;
     }
 
-    .container {
-        height: 40vh;
-    }
-
     header h1 {
         font-size: 2rem;
         margin-top: 5rem;
@@ -313,21 +277,29 @@ footer a {
     header h2 {
         font-size: 1rem;
     }
+    
+    .container {
+        margin: 2rem auto;
+    }
+
+    .box {
+        width: 25vw;
+        margin: 0.25rem;
+    }
 
     .active {
         background-size: cover;
     }
 
     #modal {
-        margin: 5vw;
-        width: 90vw;
-        height: 90vh;
+        margin: 5%;
+        width: 90%;
+        max-height: 90%;
     }
 
     #modalContent {
         margin: 5vh 5vw;
         width: 90vw;
-        height: 90vh;
     }
 
     button {
@@ -339,7 +311,7 @@ footer a {
     }
 
     #modalContent img {
-        width: 25vw;
+        width: 50vw;
         aspect-ratio: 1;
         padding: 1rem;
     }
