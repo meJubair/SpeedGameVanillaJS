@@ -127,7 +127,8 @@ button {
     background-color: rgba(0,0,0,0.6);
 
     display: none;
-    place-content: center;
+    justify-content: center;
+    align-items: center;
     
 }
 
@@ -143,7 +144,7 @@ button {
 
     position: absolute;
     display: flex;
-    place-self: center;
+    place-content: center;
     background-color: #999;
 }
 
@@ -160,7 +161,7 @@ button {
 }
 
 #modalContent {
-    margin-top: 4rem;
+    
     padding: 1rem 2rem;
     padding-bottom: 3rem;
     text-align: center;
@@ -168,6 +169,7 @@ button {
 }
 
 #modalContent h2:first-child {
+    margin-top: 5rem;
     font-size: 4rem;
     color: #333;
 }
@@ -214,9 +216,22 @@ button {
         background-size: cover;
     }
 
+
+
     #modal {
-        margin: 0 5vw;
         width: 90vw;
+        height: 90vh;
+    }
+
+    #modalContent {
+        margin-top: 5vh;
+        width: 90vw;
+        height: 90vh;
+    }
+
+    #modalContent h2:first-child {
+        font-size: 1.75rem;
+        margin-top: 2rem;
     }
 
     #modalContent .msg {
@@ -224,14 +239,19 @@ button {
     }
 
     #modalContent img {
-        width: 150px;
+        width: 20vw;
         aspect-ratio: 1;
-        padding: 1rem;
+        padding: 0.5rem;
     }
 
     button {
-        font-size: 28px;
+        font-size: 1rem;
     }
+
+    #modalContent .msg {
+        font-size: 0.75rem;
+    }
+
 }
 
 
@@ -259,12 +279,6 @@ button {
         background-size: cover;
     }
 
-    #modalOverlay {
-        margin: 5vw;
-        width: 90vw;
-        height: 90vh;
-    }
-
     #modal {
         margin: 5vw;
         width: 90vw;
@@ -272,13 +286,13 @@ button {
     }
 
     #modalContent {
-        margin: 5rem 1rem;
+        margin: 5vh 5vw;
         width: 90vw;
         height: 90vh;
     }
 
     button {
-        font-size: 28px;
+        font-size: 1rem;
     }
 
     #modalContent .msg {
@@ -286,7 +300,7 @@ button {
     }
 
     #modalContent img {
-        width: 200px;
+        width: 25vw;
         aspect-ratio: 1;
         padding: 1rem;
     }
