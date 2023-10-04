@@ -133,7 +133,10 @@ button {
 
 #modal {
     min-width: 50%;
+    max-width: 90%;
+    margin: 10%;
     min-height: 50%;
+    max-height: 90%;
     background-color: aliceblue;
     color: #333;
     border-radius: 8px;
@@ -216,6 +219,16 @@ button {
         width: 90vw;
     }
 
+    #modalContent .msg {
+        font-size: 1rem;
+    }
+
+    #modalContent img {
+        width: 150px;
+        aspect-ratio: 1;
+        padding: 1rem;
+    }
+
     button {
         font-size: 28px;
     }
@@ -246,12 +259,35 @@ button {
         background-size: cover;
     }
 
-    #modal {
-        margin: 0 5vw;
+    #modalOverlay {
+        margin: 5vw;
         width: 90vw;
+        height: 90vh;
+    }
+
+    #modal {
+        margin: 5vw;
+        width: 90vw;
+        height: 90vh;
+    }
+
+    #modalContent {
+        margin: 5rem 1rem;
+        width: 90vw;
+        height: 90vh;
     }
 
     button {
         font-size: 28px;
+    }
+
+    #modalContent .msg {
+        font-size: 1rem;
+    }
+
+    #modalContent img {
+        width: 200px;
+        aspect-ratio: 1;
+        padding: 1rem;
     }
 }
