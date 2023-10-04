@@ -191,6 +191,45 @@ button {
     padding: 2rem 1rem;
 }
 
+footer {
+    text-align: center;
+    color: aliceblue;
+    margin: 1rem auto;
+    margin-bottom: 0;
+}
+
+footer a {
+    display: block;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+#rules {
+    color: aliceblue;
+    width: 40%;
+    margin: 10vh auto;
+}
+
+#rules h1, #rules h2{
+    color: aliceblue;
+    margin: 5vh auto;
+    text-align: center;
+}
+
+#rules ul {
+    text-align: justify;
+    border: 2px solid aliceblue;
+    border-radius: 8px;
+    padding: 5%;
+}
+
+#rules li {
+    list-style-type:circle;
+    margin: 0.5rem auto;
+    margin-left: 2rem;
+    font-size: 1rem;
+}
+
 
 
 /* MOBILE FRIENDLY APPROACH LANDSCAPE */
@@ -303,5 +342,10 @@ button {
         width: 25vw;
         aspect-ratio: 1;
         padding: 1rem;
+    }
+
+    #rules {
+        width: 90%;
+        margin: 5vh auto;
     }
 }
