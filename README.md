@@ -1,3 +1,3 @@
 # Speed Game
 
-A simple game assignment as part of course assignment at Business College Helsinki.
+A simple game assignment using Vanilla JS as part of course assignment at Business College Helsinki.
